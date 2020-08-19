@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="5" failures="1" time="0.775">
-  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:46:54" time="0.775" tests="5">
-    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.058">
+<testsuites name="jest tests" tests="5" failures="1" time="0.754">
+  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:48:50" time="0.754" tests="5">
+    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.049">
       <failure>Error: Found multiple elements by: [data-testid=&quot;location-list&quot;]
 
 (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
@@ -165,7 +165,7 @@
     </testcase>
     <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.02">
     </testcase>
-    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.023">
+    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.022">
     </testcase>
   </testsuite>
 </testsuites>
