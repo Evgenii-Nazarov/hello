@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="5" failures="1" time="0.744">
-  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:46:23" time="0.744" tests="5">
-    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.049">
+<testsuites name="jest tests" tests="5" failures="1" time="0.775">
+  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:46:54" time="0.775" tests="5">
+    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.058">
       <failure>Error: Found multiple elements by: [data-testid=&quot;location-list&quot;]
 
 (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
@@ -159,7 +159,7 @@
     at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
     at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hackermaps Should have correct buttons for each location" name="Hackermaps Should have correct buttons for each location" time="0.022">
+    <testcase classname="Hackermaps Should have correct buttons for each location" name="Hackermaps Should have correct buttons for each location" time="0.021">
     </testcase>
     <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.03">
     </testcase>
