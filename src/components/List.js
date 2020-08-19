@@ -11,10 +11,10 @@ function List(props) {
                     <li key={el} data-testid={`location-${i}`}>
                         <p data-testid={`location`}>{el}</p>
 
-                        {i !== 0 && <button data-testid={`down-button`} onClick={() => moveUp(i)}>↑</button>}
+                        {i !== 0 && <button data-testid={`up-button`} onClick={() => moveUp(i)}>↑</button>}
 
                         {i !== listLength - 1 &&
-                        <button data-testid={`up-button`} onClick={() => moveDown(i)}>↓</button>}
+                        <button data-testid={`down-button`} onClick={() => moveDown(i)}>↓</button>}
 
                     </li>
                 )
