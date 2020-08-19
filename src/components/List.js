@@ -8,7 +8,7 @@ function List(props) {
         <ul id='location-list' data-testid='location-list'>
             {list.map((el, i) => {
                 return (
-                    <li data-testid={`location-${i}`}>
+                    <li key={el} data-testid={`location-${i}`}>
                         <p data-testid={`location`}>{el}</p>
 
                         {i !== 0 && <button data-testid={`down-button`} onClick={() => moveUp(i)}>↑</button>}
