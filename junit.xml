@@ -1,0 +1,171 @@
+<testsuites name="jest tests" tests="5" failures="1" time="1.141">
+  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:54:19" time="1.141" tests="5">
+    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.09">
+      <failure>Error: Found multiple elements by: [data-testid=&quot;location-list&quot;]
+
+(If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+
+&lt;body&gt;
+  &lt;div&gt;
+    &lt;div
+      class=&quot;App&quot;
+    &gt;
+      &lt;nav
+        class=&quot;app-header layout-row align-items-center justify-content-center&quot;
+      &gt;
+        &lt;div
+          class=&quot;layout-row align-items-center&quot;
+        &gt;
+          &lt;img
+            alt=&quot;&quot;
+            class=&quot;logo&quot;
+            src=&quot;logo.svg&quot;
+          /&gt;
+          &lt;h4
+            class=&quot;app-title&quot;
+            data-testid=&quot;app-title&quot;
+            id=&quot;app-title&quot;
+          &gt;
+            HackerMaps
+          &lt;/h4&gt;
+        &lt;/div&gt;
+      &lt;/nav&gt;
+      &lt;ul
+        data-testid=&quot;location-list&quot;
+        id=&quot;location-list&quot;
+      &gt;
+        &lt;li
+          data-testid=&quot;location-0&quot;
+        &gt;
+          &lt;p
+            data-testid=&quot;location&quot;
+          &gt;
+            Lombard St, San Francisco, CA, USA
+          &lt;/p&gt;
+          &lt;button
+            data-testid=&quot;down-button&quot;
+          &gt;
+            ↓
+          &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li
+          data-testid=&quot;location-1&quot;
+        &gt;
+          &lt;p
+            data-testid=&quot;location&quot;
+          &gt;
+            PIER 39, The Embarcadero, San Francisco, CA, USA
+          &lt;/p&gt;
+          &lt;button
+            data-testid=&quot;up-button&quot;
+          &gt;
+            ↑
+          &lt;/button&gt;
+          &lt;button
+            data-testid=&quot;down-button&quot;
+          &gt;
+            ↓
+          &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li
+          data-testid=&quot;location-2&quot;
+        &gt;
+          &lt;p
+            data-testid=&quot;location&quot;
+          &gt;
+            Golden Gate Bridge, San Francisco, CA, USA
+          &lt;/p&gt;
+          &lt;button
+            data-testid=&quot;up-button&quot;
+          &gt;
+            ↑
+          &lt;/button&gt;
+          &lt;button
+            data-testid=&quot;down-button&quot;
+          &gt;
+            ↓
+          &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li
+          data-testid=&quot;location-3&quot;
+        &gt;
+          &lt;p
+            data-testid=&quot;location&quot;
+          &gt;
+            Fisherman&apos;s Wharf, San Francisco, CA, USA
+          &lt;/p&gt;
+          &lt;button
+            data-testid=&quot;up-button&quot;
+          &gt;
+            ↑
+          &lt;/button&gt;
+          &lt;button
+            data-testid=&quot;down-button&quot;
+          &gt;
+            ↓
+          &lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li
+          data-testid=&quot;location-4&quot;
+        &gt;
+          &lt;p
+            data-testid=&quot;location&quot;
+          &gt;
+            Alcatraz Island, San Francisco, CA, USA
+          &lt;/p&gt;
+          &lt;button
+            data-testid=&quot;up-button&quot;
+          &gt;
+            ↑
+          &lt;/button&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;div
+        class=&quot;layout-row align-items-center justify-content-center navigation-screen&quot;
+      &gt;
+        &lt;div
+          class=&quot;card layout-row flat map-card&quot;
+        &gt;
+          &lt;section
+            class=&quot;card pb-16 pr-16 flex-auto layout-column justify-content-center&quot;
+          &gt;
+            &lt;ul
+              class=&quot;pl-0&quot;
+              data-testid=&quot;location-list&quot;
+            /&gt;
+          &lt;/section&gt;
+          &lt;section
+            class=&quot;flex-auto&quot;
+          &gt;
+            &lt;img
+              alt=&quot;map&quot;
+              class=&quot;fill&quot;
+              src=&quot;images/map.svg&quot;
+            /&gt;
+          &lt;/section&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
+    at getMultipleElementsFoundError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:50:10)
+    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:86:13)
+    at Object.it (/projects/challenge/src/App.test.js:55:31)
+    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
+    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
+    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
+    at &lt;anonymous&gt;</failure>
+    </testcase>
+    <testcase classname="Hackermaps Should have correct buttons for each location" name="Hackermaps Should have correct buttons for each location" time="0.024">
+    </testcase>
+    <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.044">
+    </testcase>
+    <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.032">
+    </testcase>
+    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.037">
+    </testcase>
+  </testsuite>
+</testsuites>
