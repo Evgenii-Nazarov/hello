@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="5" failures="5" time="1.017">
-  <testsuite name="Hackermaps" errors="0" failures="5" skipped="0" timestamp="2020-08-19T19:43:48" time="1.017" tests="5">
-    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.048">
+<testsuites name="jest tests" tests="5" failures="1" time="0.744">
+  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:46:23" time="0.744" tests="5">
+    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.049">
       <failure>Error: Found multiple elements by: [data-testid=&quot;location-list&quot;]
 
 (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
@@ -43,7 +43,7 @@
             Lombard St, San Francisco, CA, USA
           &lt;/p&gt;
           &lt;button
-            data-testid=&quot;up-button&quot;
+            data-testid=&quot;down-button&quot;
           &gt;
             ↓
           &lt;/button&gt;
@@ -57,12 +57,12 @@
             PIER 39, The Embarcadero, San Francisco, CA, USA
           &lt;/p&gt;
           &lt;button
-            data-testid=&quot;down-button&quot;
+            data-testid=&quot;up-button&quot;
           &gt;
             ↑
           &lt;/button&gt;
           &lt;button
-            data-testid=&quot;up-button&quot;
+            data-testid=&quot;down-button&quot;
           &gt;
             ↓
           &lt;/button&gt;
@@ -76,12 +76,12 @@
             Golden Gate Bridge, San Francisco, CA, USA
           &lt;/p&gt;
           &lt;button
-            data-testid=&quot;down-button&quot;
+            data-testid=&quot;up-button&quot;
           &gt;
             ↑
           &lt;/button&gt;
           &lt;button
-            data-testid=&quot;up-button&quot;
+            data-testid=&quot;down-button&quot;
           &gt;
             ↓
           &lt;/button&gt;
@@ -95,12 +95,12 @@
             Fisherman&apos;s Wharf, San Francisco, CA, USA
           &lt;/p&gt;
           &lt;button
-            data-testid=&quot;down-button&quot;
+            data-testid=&quot;up-button&quot;
           &gt;
             ↑
           &lt;/button&gt;
           &lt;button
-            data-testid=&quot;up-button&quot;
+            data-testid=&quot;down-button&quot;
           &gt;
             ↓
           &lt;/button&gt;
@@ -114,7 +114,7 @@
             Alcatraz Island, San Francisco, CA, USA
           &lt;/p&gt;
           &lt;button
-            data-testid=&quot;down-button&quot;
+            data-testid=&quot;up-button&quot;
           &gt;
             ↑
           &lt;/button&gt;
@@ -159,91 +159,13 @@
     at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
     at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hackermaps Should have correct buttons for each location" name="Hackermaps Should have correct buttons for each location" time="0.012">
-      <failure>Error: expect(received).toBeFalsy()
-
-Expected value to be falsy, instead received
-  &lt;button data-testid=&quot;up-button&quot;&gt;↓&lt;/button&gt;
-    at Object.it (/projects/challenge/src/App.test.js:66:68)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;</failure>
+    <testcase classname="Hackermaps Should have correct buttons for each location" name="Hackermaps Should have correct buttons for each location" time="0.022">
     </testcase>
-    <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.022">
-      <failure>Error: expect(received).toEqual(expected)
-
-Expected value to equal:
-  &quot;PIER 39, The Embarcadero, San Francisco, CA, USA&quot;
-Received:
-  &quot;Golden Gate Bridge, San Francisco, CA, USA&quot;
-    at Object.it (/projects/challenge/src/App.test.js:84:82)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;</failure>
+    <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.03">
     </testcase>
-    <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.007">
-      <failure>Error: Unable to find an element by: [data-testid=&quot;up-button&quot;]
-
-&lt;li
-  data-testid=&quot;location-4&quot;
-&gt;
-  &lt;p
-    data-testid=&quot;location&quot;
-  &gt;
-    Alcatraz Island, San Francisco, CA, USA
-  &lt;/p&gt;
-  &lt;button
-    data-testid=&quot;down-button&quot;
-  &gt;
-    ↑
-  &lt;/button&gt;
-&lt;/li&gt;
-    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
-    at getWithin (/projects/challenge/src/App.test.js:46:44)
-    at Object.it (/projects/challenge/src/App.test.js:98:33)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;</failure>
+    <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.02">
     </testcase>
-    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.007">
-      <failure>Error: Unable to find an element by: [data-testid=&quot;down-button&quot;]
-
-&lt;li
-  data-testid=&quot;location-0&quot;
-&gt;
-  &lt;p
-    data-testid=&quot;location&quot;
-  &gt;
-    Lombard St, San Francisco, CA, USA
-  &lt;/p&gt;
-  &lt;button
-    data-testid=&quot;up-button&quot;
-  &gt;
-    ↓
-  &lt;/button&gt;
-&lt;/li&gt;
-    at getElementError (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:46:10)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:100:13)
-    at args (/projects/challenge/node_modules/@testing-library/dom/dist/query-helpers.js:83:17)
-    at getWithin (/projects/challenge/src/App.test.js:46:44)
-    at Object.it (/projects/challenge/src/App.test.js:117:33)
-    at Object.asyncFn (/projects/challenge/node_modules/jest-jasmine2/build/jasmine-async.js:68:30)
-    at resolve (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:38:12)
-    at new Promise (&lt;anonymous&gt;)
-    at mapper (/projects/challenge/node_modules/jest-jasmine2/build/queueRunner.js:31:21)
-    at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
-    at &lt;anonymous&gt;</failure>
+    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.023">
     </testcase>
   </testsuite>
 </testsuites>
