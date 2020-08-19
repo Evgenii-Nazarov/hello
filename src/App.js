@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Navigation from './components/Navigation';
 import './App.css';
 import logo from "./logo.svg";
-import List from "./components/List";
 
 const title = "HackerMaps";
 const locations = [
@@ -44,8 +43,7 @@ function App() {
                     <h4 id="app-title" data-testid="app-title" className="app-title">{title}</h4>
                 </div>
             </nav>
-            <List list={list} moveUp={moveUp} moveDown={moveDown} listLength={list.length}/>
-            <Navigation locations={locations}/>
+            <Navigation locations={locations} list={list} moveUp={moveUp} moveDown={moveDown} listLength={list.length}/>
         </div>
     );
 
