@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="5" failures="5" time="1.359">
-  <testsuite name="Hackermaps" errors="0" failures="5" skipped="0" timestamp="2020-08-19T19:42:19" time="1.359" tests="5">
-    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.052">
+<testsuites name="jest tests" tests="5" failures="5" time="1.017">
+  <testsuite name="Hackermaps" errors="0" failures="5" skipped="0" timestamp="2020-08-19T19:43:48" time="1.017" tests="5">
+    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.048">
       <failure>Error: Found multiple elements by: [data-testid=&quot;location-list&quot;]
 
 (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
@@ -172,7 +172,7 @@ Expected value to be falsy, instead received
     at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
     at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.023">
+    <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.022">
       <failure>Error: expect(received).toEqual(expected)
 
 Expected value to equal:
@@ -187,7 +187,7 @@ Received:
     at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
     at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.008">
+    <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.007">
       <failure>Error: Unable to find an element by: [data-testid=&quot;up-button&quot;]
 
 &lt;li
@@ -216,7 +216,7 @@ Received:
     at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
     at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.006">
+    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.007">
       <failure>Error: Unable to find an element by: [data-testid=&quot;down-button&quot;]
 
 &lt;li
