@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import Navigation from './components/Navigation';
 import './App.css';
 import logo from "./logo.svg";
+import List from "./components/List";
 
 const title = "HackerMaps";
 const locations = [
@@ -12,26 +13,42 @@ const locations = [
     'Alcatraz Island, San Francisco, CA, USA'
 ];
 
-class App extends Component {
+function App() {
+    const [list, setList] = useState(locations)
 
-    constructor() {
-        super();
-        this.locations = [...locations];
+    const moveUp = (index) => {
+        const updatedList = list.map((el, i) => {
+            if (i === index) return list[index - 1]
+            if (i === index - 1) return list[index]
+            return el
+        })
+
+        setList(updatedList)
     }
 
-    render() {
-        return (
-            <div className="App">
-                <nav className="app-header layout-row align-items-center justify-content-center">
-                    <div className="layout-row align-items-center">
-                        <img alt="" src={logo} className="logo"/>
-                        <h4 id="app-title" data-testid="app-title" className="app-title">{title}</h4>
-                    </div>
-                </nav>
-                <Navigation locations={this.locations}/>
-            </div>
-        );
+    const moveDown = (index) => {
+        const updatedList = list.map((el, i) => {
+            if (i === index) return list[index + 1]
+            if (i === index + 1) return list[index]
+            return el
+        })
+
+        setList(updatedList)
     }
+
+    return (
+        <div className="App">
+            <nav className="app-header layout-row align-items-center justify-content-center">
+                <div className="layout-row align-items-center">
+                    <img alt="" src={logo} className="logo"/>
+                    <h4 id="app-title" data-testid="app-title" className="app-title">{title}</h4>
+                </div>
+            </nav>
+            <List list={list} moveUp={moveUp} moveDown={moveDown} listLength={list.length}/>
+            <Navigation locations={locations}/>
+        </div>
+    );
+
 }
 
 export default App;
