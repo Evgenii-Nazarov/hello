@@ -1,6 +1,6 @@
-<testsuites name="jest tests" tests="5" failures="1" time="0.754">
-  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:48:50" time="0.754" tests="5">
-    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.049">
+<testsuites name="jest tests" tests="5" failures="1" time="1.141">
+  <testsuite name="Hackermaps" errors="0" failures="1" skipped="0" timestamp="2020-08-19T19:54:19" time="1.141" tests="5">
+    <testcase classname="Hackermaps Should render all the locations in the list" name="Hackermaps Should render all the locations in the list" time="0.09">
       <failure>Error: Found multiple elements by: [data-testid=&quot;location-list&quot;]
 
 (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
@@ -159,13 +159,13 @@
     at Promise.resolve.then.el (/projects/challenge/node_modules/p-map/index.js:46:16)
     at &lt;anonymous&gt;</failure>
     </testcase>
-    <testcase classname="Hackermaps Should have correct buttons for each location" name="Hackermaps Should have correct buttons for each location" time="0.021">
+    <testcase classname="Hackermaps Should have correct buttons for each location" name="Hackermaps Should have correct buttons for each location" time="0.024">
     </testcase>
-    <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.03">
+    <testcase classname="Hackermaps Should move the location down on clicking the down button" name="Hackermaps Should move the location down on clicking the down button" time="0.044">
     </testcase>
-    <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.02">
+    <testcase classname="Hackermaps Should move the location up on clicking the up button" name="Hackermaps Should move the location up on clicking the up button" time="0.032">
     </testcase>
-    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.022">
+    <testcase classname="Hackermaps Should be in correct state after a series of actions" name="Hackermaps Should be in correct state after a series of actions" time="0.037">
     </testcase>
   </testsuite>
 </testsuites>
